@@ -18,11 +18,16 @@
  */
 package org.apache.deltaspike.test.testcontrol.uc020;
 
-public class DefaultTestService implements TestService020
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.inject.Produces;
+
+public class DefaultTestServiceProducer
 {
-    @Override
-    public String getValue()
+    @Produces
+    @ApplicationScoped
+    public static TestService020 createTestService()
     {
-        return "default-result";
+        DefaultTestService defaultTestService = new DefaultTestService();
+        return defaultTestService;
     }
 }
