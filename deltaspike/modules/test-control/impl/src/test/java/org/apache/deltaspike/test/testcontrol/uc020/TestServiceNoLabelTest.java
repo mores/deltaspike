@@ -34,7 +34,7 @@ import javax.inject.Inject;
 public class TestServiceNoLabelTest
 {
     @Inject
-    private TestService testService;
+    private TestService020 testService;
 
     @Test
     public void noLabel()

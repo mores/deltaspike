@@ -23,7 +23,7 @@ import javax.enterprise.inject.Alternative;
 
 @Alternative
 @ApplicationScoped
-public class TestServiceLabelB implements TestService
+public class TestServiceLabelB implements TestService020
 {
     @Override
     public String getValue()

@@ -18,7 +18,7 @@
  */
 package org.apache.deltaspike.test.testcontrol.uc020;
 
-public interface TestService
+public interface TestService020
 {
     String getValue();
 }

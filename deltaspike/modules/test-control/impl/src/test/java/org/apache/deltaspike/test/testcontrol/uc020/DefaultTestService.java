@@ -21,7 +21,7 @@ package org.apache.deltaspike.test.testcontrol.uc020;
 import javax.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
-public class DefaultTestService implements TestService
+public class DefaultTestService implements TestService020
 {
     @Override
     public String getValue()

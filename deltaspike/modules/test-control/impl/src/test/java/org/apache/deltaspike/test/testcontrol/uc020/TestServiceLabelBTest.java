@@ -36,7 +36,7 @@ import javax.inject.Inject;
 public class TestServiceLabelBTest
 {
     @Inject
-    private TestService testService;
+    private TestService020 testService;
 
     @Test
     public void resultB()
