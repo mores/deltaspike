@@ -18,8 +18,9 @@
  */
 package org.apache.deltaspike.test.testcontrol.uc020;
 
+import org.apache.deltaspike.core.api.exclude.Exclude;
 
-@DefaultQualifier
+@Exclude
 public class DefaultTestService implements TestService020
 {
     @Override
