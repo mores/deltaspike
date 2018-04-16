@@ -21,8 +21,7 @@ package org.apache.deltaspike.test.testcontrol.uc020;
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Alternative;
 
-@Alternative
-@ApplicationScoped
+@LabelAQualifier
 public class TestServiceLabelA implements TestService020
 {
     @Override

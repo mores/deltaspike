@@ -19,14 +19,16 @@
 package org.apache.deltaspike.test.testcontrol.uc020;
 
 import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.inject.Alternative;
+import javax.enterprise.inject.Produces;
 
-@LabelBQualifier
-public class TestServiceLabelB implements TestService020
+public class TestServiceLabelAProducer
 {
-    @Override
-    public String getValue()
+    @LabelAQualifier
+    @Produces
+    @ApplicationScoped
+    public static TestService020 createTestService()
     {
-        return "result-b";
+        DefaultTestService defaultTestService = new DefaultTestService();
+        return defaultTestService;
     }
 }

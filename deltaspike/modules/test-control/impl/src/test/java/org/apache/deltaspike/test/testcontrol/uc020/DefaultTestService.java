@@ -18,6 +18,8 @@
  */
 package org.apache.deltaspike.test.testcontrol.uc020;
 
+
+@DefaultQualifier
 public class DefaultTestService implements TestService020
 {
     @Override
