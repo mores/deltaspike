@@ -25,7 +25,6 @@ import javax.enterprise.inject.Produces;
 public class TestServiceLabelBProducer
 {
     @Alternative
-    @LabelBQualifier
     @Produces
     @ApplicationScoped
     public static TestService020 createTestService()
