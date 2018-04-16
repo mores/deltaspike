@@ -22,14 +22,14 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Alternative;
 import javax.enterprise.inject.Produces;
 
+@Alternative
 public class TestServiceLabelBProducer
 {
-    @Alternative
     @Produces
     @ApplicationScoped
     public static TestService020 createTestService()
     {
-        DefaultTestService defaultTestService = new DefaultTestService();
-        return defaultTestService;
+        TestService020 service = new TestServiceLabelB();
+        return service;
     }
 }
