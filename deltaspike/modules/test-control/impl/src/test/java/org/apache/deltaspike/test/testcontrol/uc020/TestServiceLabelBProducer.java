@@ -19,10 +19,12 @@
 package org.apache.deltaspike.test.testcontrol.uc020;
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.inject.Alternative;
 import javax.enterprise.inject.Produces;
 
 public class TestServiceLabelBProducer
 {
+    @Alternative
     @LabelBQualifier
     @Produces
     @ApplicationScoped
