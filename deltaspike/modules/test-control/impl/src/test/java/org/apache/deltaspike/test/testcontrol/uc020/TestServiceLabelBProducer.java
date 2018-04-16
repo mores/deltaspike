@@ -23,7 +23,7 @@ import javax.enterprise.inject.Alternative;
 import javax.enterprise.inject.Produces;
 
 @Alternative
-public class TestServiceLabelBProducer
+public class TestServiceLabelBProducer extends DefaultTestServiceProducer
 {
     @Produces
     @ApplicationScoped
